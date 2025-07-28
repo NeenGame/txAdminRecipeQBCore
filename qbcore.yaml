@@ -82,11 +82,6 @@ tasks:
     ref: master
     src: https://github.com/qbcore-framework/PolyZone
 
-  - action: download_github
-    dest: ./resources/[standalone]/LegacyFuel
-    ref: master
-    src: https://github.com/qbcore-framework/LegacyFuel
-
   - action: waste_time # prevent github throttling
     seconds: 10
 
@@ -347,6 +342,11 @@ tasks:
     dest: ./resources/[qb]/qb-newsjob
     ref: main
     src: https://github.com/qbcore-framework/qb-newsjob
+
+  - action: download_github
+    dest: ./resources/[qb]/qb-fuel
+    ref: main
+    src: https://github.com/qbcore-framework/qb-fuel
 
   - action: download_github
     dest: ./resources/[qb]/qb-jewelery
